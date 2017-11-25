@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99831A38-5134-494F-AAB4-DC0D9EAB46FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paytm_Project</RootNamespace>
+    <AssemblyName>Paytm_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Spire.Barcode">
+      <HintPath>..\..\..\QRcodeGenerator\QRcodeGenerator\QRcodeGenerator\bin\Debug\Spire.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebEye.Controls.WinForms.WebCameraControl">
+      <HintPath>..\..\..\GULABOO\WebEye.Controls.WinForms.WebCameraControl.dll</HintPath>
+    </Reference>
+    <Reference Include="WebEye.Controls.Wpf.WebCameraControl">
+      <HintPath>..\..\..\GULABOO\WpfSources\WebCameraDemo\bin\Release\WebEye.Controls.Wpf.WebCameraControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaaa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaaa.Designer.cs">
+      <DependentUpon>frmaaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadd.Designer.cs">
+      <DependentUpon>frmadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcode.Designer.cs">
+      <DependentUpon>Frmcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhome.Designer.cs">
+      <DependentUpon>frmhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpassbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpassbook.Designer.cs">
+      <DependentUpon>frmpassbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScan.Designer.cs">
+      <DependentUpon>frmScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsendSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsendSuccess.Designer.cs">
+      <DependentUpon>frmsendSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homelist1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="homelist1.Designer.cs">
+      <DependentUpon>homelist1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homelist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="homelist.Designer.cs">
+      <DependentUpon>homelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="loginlist.Designer.cs">
+      <DependentUpon>loginlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="offershm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="offershm.Designer.cs">
+      <DependentUpon>offershm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paytm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paytm.Designer.cs">
+      <DependentUpon>Paytm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="paytm1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="paytm1.Designer.cs">
+      <DependentUpon>paytm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sent_successfully.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sent_successfully.Designer.cs">
+      <DependentUpon>sent_successfully.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaaa.resx">
+      <DependentUpon>frmaaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadd.resx">
+      <DependentUpon>frmadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcode.resx">
+      <DependentUpon>Frmcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhome.resx">
+      <DependentUpon>frmhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpassbook.resx">
+      <DependentUpon>frmpassbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScan.resx">
+      <DependentUpon>frmScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsendSuccess.resx">
+      <DependentUpon>frmsendSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homelist1.resx">
+      <DependentUpon>homelist1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homelist.resx">
+      <DependentUpon>homelist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginlist.resx">
+      <DependentUpon>loginlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="offershm.resx">
+      <DependentUpon>offershm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paytm.resx">
+      <DependentUpon>Paytm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="paytm1.resx">
+      <DependentUpon>paytm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sent_successfully.resx">
+      <DependentUpon>sent_successfully.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_user-alt_285645.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_menu-alt_134216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paytm_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_96_171455.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_search_126577.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-bag_211626.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_profle_1055000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Sed-22_2236328.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_finance-10_808669.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_home_126572.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_app_type_mall_512px_GREY_339933.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_minus_214643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Sed-15_2231957.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_34_110999.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_General_-_Office_38_1471114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_back_126585.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_arrowleft_1167966 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ic_my_library_books_48px_352555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_20_-_Wishlist_2102056.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_circle-help-question-mark-glyph_763459.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ic_security_48px_352092.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_language_1608752.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_ic_insert_invitation_48px_352458.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_share_383224.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_rupee_1608821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_notification_done_48784.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_100_2530011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_upload_accept_103739.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_money_bag_309025.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_download_accept_103530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_079_Pin2_183207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103739-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_meanicons_60_197221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_mobile4_216670.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_storm_727681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_storm_7276811.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_69_2529985.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_vehicles-04_809740.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Percent_2638319.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_water3_216782.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_social_google_play_710294.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_aiga_departingflights_134134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_132_111078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1507110040.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_minus_2146431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\214643-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_rupee_16088211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_circle_293633.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_49-google_104454.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_46-facebook_104458.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_43-twitter_104461.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_arrow-up-01_186407.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_arrow-down-01_186411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_question-circle_1608426.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_icon-close-circled_211650.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_paytm_1218169.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
